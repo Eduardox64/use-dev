@@ -18,11 +18,19 @@
 }
 
 .cabecalho__link {
+  display: inline-block;
   font-size: 1.25rem;
   line-height: 1.5rem;
   text-decoration: none;
   color: var(--cor-links);
   font-family: var(--fonte-texto);
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s linear, transform 0.2s linear;
+}
+
+.cabecalho__link:hover {
+  border-bottom: 2px solid black;
+  transform: scale(1.04);
 }
 
 .cabecalho__item--input {
@@ -50,6 +58,14 @@
   transform: translateY(-50%);
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.cabecalho__icone {
+  transition: transform 0.2s linear;
+}
+
+.cabecalho__icone:hover {
+  transform: scale(1.1);
 }
 
 .cabecalho__menu {

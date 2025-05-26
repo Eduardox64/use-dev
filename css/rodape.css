@@ -60,6 +60,26 @@
   gap: 16.67px;
 }
 
+.rodape__link:hover {
+  color: var(--cor-destaque-secundario);
+}
+
+.rodape__imagem-cartao {
+  transition: transform 0.2s linear;
+}
+
+.rodape__imagem-cartao:hover {
+  transform: scale(1.2);
+}
+
+.rodape__imagem-redes {
+  transition: transform 0.2s linear;
+}
+
+.rodape__imagem-redes:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (max-width: 1024px) {
   .rodape {
     padding: 40px 60px;
