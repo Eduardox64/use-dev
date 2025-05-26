@@ -1,0 +1,122 @@
+.rodape {
+  padding: 60px 220px;
+  background-color: var(--cor-links);
+}
+
+.rodape__lista li {
+  margin-bottom: 8px;
+}
+
+.rodape__linha-um {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  border-bottom: 1.5px solid var(--cor-destaque-secundario);
+  padding-bottom: 32px;
+  width: 100%;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.rodape__texto {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--fonte-texto);
+  color: var(--cor-destaque-secundario);
+  line-height: 19px;
+  margin-top: 24px;
+}
+
+.rodape__titulo {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.rodape__item {
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-family: var(--fonte-texto);
+}
+
+.rodape__linha-dois {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.rodape__lista {
+  list-style-type: none;
+}
+
+.rodape__lista--imagens {
+  display: flex;
+  gap: 16.67px;
+}
+
+@media screen and (max-width: 1024px) {
+  .rodape {
+    padding: 40px 60px;
+  }
+
+  .rodape__linha-um {
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: 
+    "logo logo logo"
+    "funcionamento institucional informacoes";
+    border-bottom: none;
+    gap: 16px 40px;
+  }
+
+  .rodape__usedev {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1.5px solid var(--cor-destaque-secundario);
+    padding-bottom: 40px;
+  }
+
+  .rodape__funcionamento {
+    grid-area: funcionamento;
+  }
+  
+  .rodape__institucional {
+    grid-area: institucional;
+  }
+
+  .rodape__informacoes {
+    grid-area: informacoes;
+  }
+
+  .rodape__funcionamento, .rodape__institucional, .rodape__informacoes {
+    padding-top: 16px;
+  }
+
+  .rodape__linha-dois {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rodape {
+    padding: 60px;
+  }
+
+  .rodape__linha-um {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rodape__linha-dois {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
