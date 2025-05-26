@@ -22,6 +22,14 @@ Após concluir as aulas, foram feitas melhorias **além do conteúdo original**,
 
 ![Preview do projeto](assets/gif-preview/preview.gif)
 
+<p align="center">
+  <a href="https://use-dev-rho.vercel.app/">
+    <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Deploy Badge"/>
+  </a>
+</p>
+
+🔗 **Acesse online:** [use-dev-rho.vercel.app](https://use-dev-rho.vercel.app/)
+
 ---
 
 ## 🎨 Design
